@@ -5,15 +5,17 @@ Group:
 
 '''
 
-def triangle(x,y,a,b,angle,color):
+def triangle(x,y,a,b,angle,color, border,border-color):
     '''
     Function for drawing triangle.
-    :param x:
-    :param y:
-    :param a:
-    :param b:
-    :param angle:
-    :param color:
+    :param x: coordinate x
+    :param y: coordinate y
+    :param a: catetus 1
+    :param b: catetus 2
+    :param angle: angle of rotation
+    :param color: color of triangle
+    :param border:
+    :param border-color:
     :return: None
     '''
     pass
