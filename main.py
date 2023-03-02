@@ -21,6 +21,7 @@ def triangle(x,y,a,b,angle,color):
 def draw_dog():
     '''
 
+glkdfgkdlfl
     :return:
     '''
     pass
