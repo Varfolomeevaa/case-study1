@@ -32,7 +32,7 @@ def triangle(x,y,a,b,fill,border,border_color):
     turtle.end_fill()
     turtle.pu()
     pass
-triangle(50,50,215,124,'red', 5,'blue' )
+#triangle(50,50,215,124,'red', 5,'blue' )
 
 def rectangle(x,y,a,b,color,border,border_color):
     '''
@@ -74,6 +74,21 @@ def ellipse(a, b, color, fill,x0,y0,border):
         turtle.goto(x, y)
     turtle.end_fill()
     pass
+'''
+    turtle.pu()
+    turtle.goto(x0, y0)
+    turtle.pd()
+    turtle.color(color,fill)
+    turtle.pensize(border)
+    turtle.begin_fill()
+    turtle.circle(r,90)
+    turtle.lt(90)
+    turtle.fd(r)
+    turtle.rt(90)
+    turtle.bk(r)
+    turtle.end_fill()
+    turtle.done()
+'''
 def semicircle(r,x0,y0,color,fill,border):
     '''
     Function for drawing semicircle
@@ -95,8 +110,10 @@ def semicircle(r,x0,y0,color,fill,border):
     turtle.rt(90)
     turtle.bk(r*2)
     turtle.end_fill()
+    turtle.done()
     pass
-def part1(a, b, clr_ell, fill_ell,x0_ell,y0_ell,x1,y1,a1,b1,clr1,border1,border_color1,):
+
+semicircle(50,100,150,'red','green',5)
 def main():
     '''
     Main function.
