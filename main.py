@@ -5,25 +5,36 @@ Group:
 
 '''
 
-def triangle(x,y,a,b,angle,color, border,border-color):
+def triangle(x,y,a,b,angle,color, border,border_color):
     '''
     Function for drawing triangle.
     :param x: coordinate x
     :param y: coordinate y
-    :param a: catetus 1
-    :param b: catetus 2
+    :param a: leg 1
+    :param b: leg 2
     :param angle: angle of rotation
     :param color: color of triangle
-    :param border:
-    :param border-color:
+    :param border: breadth of limit
+    :param border-color: color of the border
     :return: None
     '''
     pass
 
-def draw_dog():
+def rectangle(x,y,a,b,color,border,border_color):
+    '''
+    Function for drawing rectangle.
+    :param x: coordinate x
+    :param y: coordinate y
+    :param a: width
+    :param b: length
+    :param color: color of rectangle
+    :param border: breadth of limit
+    :param border_color: color of the border
+    :return: none
     '''
 
-glkdfgkdlfl
+def draw_dog():
+    '''
     :return:
     '''
     pass
