@@ -13,17 +13,18 @@ def triangle(x,y,a,b,fill,border,border_color):
     :param y: coordinate y
     :param a: leg 1
     :param b: leg 2
-    :param angle: angle of rotation
     :param fill: color of the fill
     :param border: breadth of limit
     :param border-color: color of the border
     :return: None
     '''
+    turtle.pu()
     turtle.goto(x,y)
     turtle.color(border_color, fill)
     turtle.pensize(border)
     turtle.begin_fill()
     turtle.pd()
+    turtle.lt(90)
     turtle.fd(a)
     turtle.rt(90)
     turtle.fd(b)
@@ -31,7 +32,7 @@ def triangle(x,y,a,b,fill,border,border_color):
     turtle.end_fill()
     turtle.pu()
     pass
-triangle(200,100,250,100,yellow,5,red)
+triangle(50,50,215,124,'red', 5,'blue' )
 
 def rectangle(x,y,a,b,color,border,border_color):
     '''
