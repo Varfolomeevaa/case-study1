@@ -34,7 +34,7 @@ def rectangle(x,y,a,b,color,border,border_color):
     :return: none
     '''
     pass
-def ellipse(a, b, color='black', fill=''):
+def ellipse(a, b, color, filling):
     '''
     Function for drawing ellipse
     :param a:
