@@ -33,6 +33,25 @@ def rectangle(x,y,a,b,color,border,border_color):
     :return: none
     '''
     pass
+def ellipse(a, b, color, fill):
+    '''
+    Function for drawing ellipse
+    :param a: radius of the bigger circle of the ellipse
+    :param b: radius of the smaller circle of the ellipse
+    :param color: color of border
+    :param fill: color of filling
+    :return: none
+    '''
+    dx = turtle.xcor()
+    dy = turtle.ycor()
+    turtle.color(color, fill)
+    turtle.begin_fill()
+    for deg in range(361):
+        rad = math.radians(deg)
+        x = a * math.sin(rad) + dx
+        y = -b * math.cos(rad) + b + dy
+        turtle.goto(x, y)
+    turtle.end_fill()
 def main():
     '''
     Main function.
