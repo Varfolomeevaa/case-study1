@@ -26,15 +26,16 @@ def triangle(x,y,a,b,ang1,ang2,fill,border,border_color):
     turtle.pensize(border)
     turtle.begin_fill()
     turtle.pd()
-    turtle.lt(90)
+    turtle.lt(ang1)
     turtle.fd(a)
-    turtle.rt(90)
+    turtle.rt(ang2)
     turtle.fd(b)
     turtle.goto(x,y)
     turtle.end_fill()
     turtle.pu()
     pass
-triangle(-300,150,150,150,-90,-90,'red', 5,'blue')
+triangle(-300,300,150,150,-90,-90,'red', 5,'blue')
+triangle(-300,300,150,150,90,-90,'red', 5,'blue')
 
 def rectangle(x,y,a,b,color,border,border_color):
     '''
