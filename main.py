@@ -1,8 +1,8 @@
 '''
 Title 
 Group:
-
-
+Sineokya Anastasia
+Varfolomeeva Victoria
 '''
 
 def triangle(x,y,a,b,angle,color, border,border_color):
@@ -32,23 +32,11 @@ def rectangle(x,y,a,b,color,border,border_color):
     :param border_color: color of the border
     :return: none
     '''
-
-def draw_dog():
-    '''
-    :return:
-    '''
-    pass
-
-def draw_cat():
-    pass
-
 def main():
     '''
     Main function.
     :return: None
     '''
-    draw_cat()
-    draw_dog()
 
 if __name__ == '__main':
     main()
