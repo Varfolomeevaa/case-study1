@@ -1,11 +1,11 @@
 '''
 Title 
 Group:
-Sineokya Anastasia
+Sineokaya Anastasia
 Varfolomeeva Victoria
 '''
 
-def triangle(x,y,a,b,angle,color, border,border_color):
+def triangle(x,y,a,b,c,angle,color, border,border_color):
     '''
     Function for drawing triangle.
     :param x: coordinate x
@@ -20,6 +20,9 @@ def triangle(x,y,a,b,angle,color, border,border_color):
     '''
     pass
 
+
+
+
 def rectangle(x,y,a,b,color,border,border_color):
     '''
     Function for drawing rectangle.
@@ -32,6 +35,7 @@ def rectangle(x,y,a,b,color,border,border_color):
     :param border_color: color of the border
     :return: none
     '''
+    pass
 def main():
     '''
     Main function.
