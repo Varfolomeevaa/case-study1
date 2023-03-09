@@ -6,13 +6,15 @@ Varfolomeeva Victoria
 '''
 import math
 import turtle
-def triangle(x,y,a,b,fill,border,border_color):
+def triangle(x,y,a,b,ang1,ang2,fill,border,border_color):
     '''
     Function for drawing triangle.
     :param x: coordinate x
     :param y: coordinate y
     :param a: leg 1
     :param b: leg 2
+    :param ang1: first angle of rotation
+    :param ang2: second angle of rotation
     :param fill: color of the fill
     :param border: breadth of limit
     :param border-color: color of the border
@@ -24,15 +26,15 @@ def triangle(x,y,a,b,fill,border,border_color):
     turtle.pensize(border)
     turtle.begin_fill()
     turtle.pd()
-    turtle.lt(90)
+    turtle.rt(ang1)
     turtle.fd(a)
-    turtle.rt(90)
+    turtle.lt(ang2)
     turtle.fd(b)
     turtle.goto(x,y)
     turtle.end_fill()
     turtle.pu()
     pass
-triangle()
+triangle(-300, 150, 150,150,-90, -90,'red',5,'blue')
 
 import turtle
 def rectangle(x,y,a,b,fill,border,border_color):
@@ -111,6 +113,7 @@ def semicircle(r,x0,y0,color,fill):
     turtle.bk(r*2)
     turtle.end_fill()
     pass
+
 def main():
     '''
     Main function.
