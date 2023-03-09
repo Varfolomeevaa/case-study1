@@ -32,7 +32,7 @@ def triangle(x,y,a,b,fill,border,border_color):
     turtle.end_fill()
     turtle.pu()
     pass
-triangle(50,50,215,124,'red', 5,'blue' )
+triangle()
 
 import turtle
 def rectangle(x,y,a,b,fill,border,border_color):
@@ -64,7 +64,7 @@ def rectangle(x,y,a,b,fill,border,border_color):
     turtle.end_fill()
     turtle.pu()
     pass
-rectangle(100, 100, 50,100, 'red', 5, 'blue')
+rectangle()
 
 def ellipse(a, b, color, fill,x0,y0):
     '''
