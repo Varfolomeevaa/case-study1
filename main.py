@@ -6,7 +6,7 @@ Varfolomeeva Victoria
 '''
 import math
 import turtle
-def triangle(x,y,a,b,c,angle,color, border,border_color):
+def triangle(x,y,a,b,fill,border,border_color):
     '''
     Function for drawing triangle.
     :param x: coordinate x
@@ -14,12 +14,25 @@ def triangle(x,y,a,b,c,angle,color, border,border_color):
     :param a: leg 1
     :param b: leg 2
     :param angle: angle of rotation
-    :param color: color of triangle
+    :param fill: color of the fill
     :param border: breadth of limit
     :param border-color: color of the border
     :return: None
     '''
+    turtle.goto(x,y)
+    turtle.color(border_color, fill)
+    turtle.pensize(border)
+    turtle.begin_fill()
+    turtle.pd()
+    turtle.fd(a)
+    turtle.rt(90)
+    turtle.fd(b)
+    turtle.goto(x,y)
+    turtle.end_fill()
+    turtle.pu()
     pass
+triangle(200,100,250,100,yellow,5,red)
+
 def rectangle(x,y,a,b,color,border,border_color):
     '''
     Function for drawing rectangle.
