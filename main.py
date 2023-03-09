@@ -72,6 +72,26 @@ def ellipse(a, b, color, fill,x0,y0):
         turtle.goto(x, y)
     turtle.end_fill()
     pass
+def semicircle(r,x0,y0,color,fill):
+    '''
+    Function for drawing semicircle
+    :param r: radius of semicircle
+    :param x0: coordinate x0
+    :param y0: coordinate y0
+    :param color: color of border
+    :param fill: color of filling
+    :return: None
+    '''
+    turtle.pu()
+    turtle.goto(x0, y0)
+    turtle.pd()
+    turtle.color(color,fill)
+    turtle.begin_fill()
+    turtle.circle(r,180)
+    turtle.rt(90)
+    turtle.bk(r*2)
+    turtle.end_fill()
+    pass
 def main():
     '''
     Main function.
