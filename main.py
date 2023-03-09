@@ -5,6 +5,8 @@ Sineokaya Anastasia
 Varfolomeeva Victoria
 '''
 
+import turtle
+
 def triangle(x,y,a,b,c,angle,color, border,border_color):
     '''
     Function for drawing triangle.
@@ -19,6 +21,12 @@ def triangle(x,y,a,b,c,angle,color, border,border_color):
     :return: None
     '''
     pass
+color('color')
+goto(x,y)
+pd()
+
+
+
 
 
 
