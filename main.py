@@ -34,19 +34,38 @@ def triangle(x,y,a,b,fill,border,border_color):
     pass
 triangle(50,50,215,124,'red', 5,'blue' )
 
-def rectangle(x,y,a,b,color,border,border_color):
+import turtle
+def rectangle(x,y,a,b,fill,border,border_color):
     '''
     Function for drawing rectangle.
     :param x: coordinate x
     :param y: coordinate y
     :param a: width
     :param b: length
-    :param color: color of rectangle
+    :param fill: color of rectangle
     :param border: breadth of limit
     :param border_color: color of the border
     :return: none
     '''
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.color(border_color, fill)
+    turtle.pensize(border)
+    turtle.begin_fill()
+    turtle.pd()
+    turtle.lt(90)
+    turtle.fd(a)
+    turtle.rt(90)
+    turtle.fd(b)
+    turtle.rt(90)
+    turtle.fd(a)
+    turtle.rt(90)
+    turtle.fd(b)
+    turtle.end_fill()
+    turtle.pu()
     pass
+rectangle(100, 100, 50,100, 'red', 5, 'blue')
+
 def ellipse(a, b, color, fill,x0,y0):
     '''
     Function for drawing ellipse
