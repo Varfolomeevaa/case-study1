@@ -140,7 +140,7 @@ def sector(r,x0,y0,color,fill,border,ang):
     turtle.rt(ang-90)
     turtle.end_fill()
     pass
-
+turtle.bgcolor('lightsteelblue')
 triangle(-300,300,150,150,-90,-90,'white')
 triangle(-150,150,150,150,90,-90,'lightsteelblue')
 triangle(-150,150,150,150,90,90,'darkslateblue')
@@ -151,6 +151,7 @@ rectangle(150,150,150,150,'white',0,'')
 sector(150,300,150,'','orangered',0,90)
 triangle(300,0,150,150,90,-90,'darkslateblue')
 triangle(150,150,150,150,-90,-90,'lightsteelblue')
+rectangle(-150,0,150,300,'white',0,'')
 sector(150,150,0,'','darkslateblue',0,90)
 sector(150,0,150,'','darkslateblue',0,180)
 rectangle(-300,0,150,150,'lightsteelblue',0,'')
@@ -174,7 +175,7 @@ rectangle(0,-300,150,75,'lightsteelblue',0,'')
 rectangle(75,-300,150,75,'white',0,'')
 rectangle(150,-300,150,150,'lightsteelblue',0,'')
 sector(150,300,-300,'','plum',0,90)
-#rectangle(-300,-300,600,600,'',1, 'black')
+rectangle(-300,-300,600,600,'',1, 'black')
 turtle.done()
 
 def main():
