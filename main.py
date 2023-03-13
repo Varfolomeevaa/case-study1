@@ -66,9 +66,10 @@ def triangle(x, y, a, b, ang1, ang2, fill):
     turtle.pu()
     pass
 
-def ellipse(a, b, color, fill,x0,y0,border):
-    '''
-    Function for drawing ellipse
+
+def ellipse(a, b, color, fill, x0, y0, border):
+    """
+    Function for drawing ellipse.
     :param a: radius of the bigger circle of the ellipse
     :param b: radius of the smaller circle of the ellipse
     :param color: color of border
@@ -77,9 +78,9 @@ def ellipse(a, b, color, fill,x0,y0,border):
     :param y0: coordinate y0
     :param border: breadth of limit
     :return: None
-    '''
+    """
     turtle.pu()
-    turtle.goto(x0,y0)
+    turtle.goto(x0, y0)
     dx = turtle.xcor()
     dy = turtle.ycor()
     turtle.pd()
@@ -94,25 +95,27 @@ def ellipse(a, b, color, fill,x0,y0,border):
     turtle.end_fill()
     pass
 
-def sector(r,x0,y0,color,fill,border,ang):
-    '''
-    Function for drawing semicircle
+
+def sector(r, x0, y0, color, fill, border, ang):
+    """
+    Function for drawing sector.
     :param r: radius of sector
     :param x0: coordinate x0
     :param y0: coordinate y0
     :param color: color of border
     :param fill: color of filling
     :param border: breadth of limit
+    :param ang: angle of rotation
     :return: None
-    '''
+    """
     turtle.pu()
     turtle.goto(x0, y0)
     turtle.lt(ang)
     turtle.pd()
-    turtle.color(color,fill)
+    turtle.color(color, fill)
     turtle.pensize(border)
     turtle.begin_fill()
-    turtle.circle(r,90)
+    turtle.circle(r, 90)
     turtle.rt(90)
     turtle.bk(r)
     turtle.rt(90)
@@ -120,6 +123,7 @@ def sector(r,x0,y0,color,fill,border,ang):
     turtle.rt(ang-90)
     turtle.end_fill()
     pass
+
 
 def part_1():
     triangle(-300, 300, 150, 150, -90, -90, 'white')
@@ -139,7 +143,12 @@ def part_1():
     sector(150, -300, 0, '', 'orangered', 0, 0)
     pass
 
+
 def part_2():
+    """
+    Function for part2.
+    :return: None
+    """
     triangle(-300, -150, 150, 150, 90, 90, 'white')
     triangle(-300, -150, 150, 150, 0, 270, 'plum')
     triangle(0, -150, 150, 150, 180, 90, 'lightsteelblue')
@@ -160,11 +169,13 @@ def part_2():
     sector(150, 300, -300, '', 'plum', 0, 90)
     rectangle(-300, -300, 600, 600, '', 10, 'black')
     pass
+
+
 def main():
-    '''
+    """
     Main function.
     :return: None
-    '''
+    """
     turtle.speed(10)
     turtle.ht()
     turtle.bgcolor('lavender')
