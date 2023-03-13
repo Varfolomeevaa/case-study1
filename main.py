@@ -1,23 +1,25 @@
-'''
+"""
 Title 
 Group:
 Sineokaya Anastasia
 Varfolomeeva Victoria
-'''
+"""
 import math
 import turtle
-def rectangle(x,y,a,b,fill,border,border_color):
-    '''
+
+
+def rectangle(x, y, a, b, fill, border, border_color):
+    """
     Function for drawing rectangle.
     :param x: coordinate x
     :param y: coordinate y
-    :param a: length
+    :param a: lenght
     :param b: width
     :param fill: color of rectangle
     :param border: breadth of limit
     :param border_color: color of the border
     :return: none
-    '''
+    """
     turtle.pu()
     turtle.goto(x, y)
     turtle.color(border_color, fill)
@@ -37,8 +39,8 @@ def rectangle(x,y,a,b,fill,border,border_color):
     turtle.pu()
     pass
 
-def triangle(x,y,a,b,ang1,ang2,fill):
-    '''
+def triangle(x, y, a, b, ang1, ang2, fill):
+    """
     Function for drawing triangle.
     :param x: coordinate x
     :param y: coordinate y
@@ -48,7 +50,7 @@ def triangle(x,y,a,b,ang1,ang2,fill):
     :param ang2: 2nd angle of rotation
     :param fill: color of the fill
     :return: None
-    '''
+    """
     turtle.pu()
     turtle.goto(x,y)
     turtle.color(fill)
@@ -136,7 +138,7 @@ def part_1():
     rectangle(-300, 0, 150, 150, 'lightsteelblue', 0, '')
     sector(150, -300, 0, '', 'orangered', 0, 0)
     pass
-    ''
+
 def part_2():
     triangle(-300, -150, 150, 150, 90, 90, 'white')
     triangle(-300, -150, 150, 150, 0, 270, 'plum')
@@ -170,5 +172,7 @@ def main():
     part_2()
     turtle.done()
     pass
+
+
 if __name__ == '__main__':
     main()
