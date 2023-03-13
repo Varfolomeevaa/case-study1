@@ -49,7 +49,6 @@ def triangle(x,y,a,b,ang1,ang2,fill):
     :param fill: color of the fill
     :return: None
     '''
-    turtle.speed(10)
     turtle.pu()
     turtle.goto(x,y)
     turtle.color(fill)
@@ -140,7 +139,9 @@ def sector(r,x0,y0,color,fill,border,ang):
     turtle.rt(ang-90)
     turtle.end_fill()
     pass
-turtle.bgcolor('lightsteelblue')
+turtle.speed(10)
+turtle.ht()
+turtle.bgcolor('lavender')
 triangle(-300,300,150,150,-90,-90,'white')
 triangle(-150,150,150,150,90,-90,'lightsteelblue')
 triangle(-150,150,150,150,90,90,'darkslateblue')
@@ -175,7 +176,7 @@ rectangle(0,-300,150,75,'lightsteelblue',0,'')
 rectangle(75,-300,150,75,'white',0,'')
 rectangle(150,-300,150,150,'lightsteelblue',0,'')
 sector(150,300,-300,'','plum',0,90)
-rectangle(-300,-300,600,600,'',1, 'black')
+rectangle(-300,-300,600,600,'',10, 'black')
 turtle.done()
 
 def main():
