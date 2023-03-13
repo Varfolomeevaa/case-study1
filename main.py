@@ -49,7 +49,7 @@ def triangle(x,y,a,b,ang1,ang2,fill):
     :param fill: color of the fill
     :return: None
     '''
-    turtle.speed(10)
+    turtle.speed(5)
     turtle.pu()
     turtle.goto(x,y)
     turtle.color(fill)
@@ -64,16 +64,6 @@ def triangle(x,y,a,b,ang1,ang2,fill):
     turtle.end_fill()
     turtle.pu()
     pass
-
-triangle(-300,300,150,150,-90,-90,'white')
-triangle(-300,300,150,150,0,90,'lightsteelblue')
-triangle(-150,150,150,150,180,90,'darkslateblue')
-triangle(-150,150,150,150,0,-90,'plum')
-triangle(0,300,150,150,180,-90,'lightsteelblue')
-triangle(0,300,150,150,0,90,'darkslateblue')
-rectangle(-300,-300,600,600,'',1, 'black')
-
-turtle.done()
 
 def ellipse(a, b, color, fill,x0,y0,border):
     '''
@@ -150,6 +140,22 @@ def sector(r,x0,y0,color,fill,border,ang):
     turtle.rt(ang-90)
     turtle.end_fill()
     pass
+
+triangle(-300,300,150,150,-90,-90,'white')
+triangle(-150,150,150,150,90,-90,'lightsteelblue')
+triangle(-150,150,150,150,90,90,'darkslateblue')
+triangle(0,300,150,150,-90,90,'plum')
+triangle(0,300,150,150,-90,-90,'lightsteelblue')
+triangle(150,150,150,150,90,-90,'darkslateblue')
+rectangle(150,150,150,150,'white',0,'')
+sector(150,300,150,'','orangered',0,90)
+triangle(300,0,150,150,90,-90,'darkslateblue')
+triangle(150,150,150,150,-90,-90,'lightsteelblue')
+sector(150,150,0,'','darkslateblue',0,90)
+sector(150,0,150,'','darkslateblue',0,180)
+rectangle(-300,0,150,150,'lightsteelblue',0,'')
+#rectangle(-300,-300,600,600,'',1, 'black')
+turtle.done()
 
 def main():
     '''
