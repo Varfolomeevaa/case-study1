@@ -13,7 +13,7 @@ def rectangle(x, y, a, b, fill, border, border_color):
     Function for drawing rectangle.
     :param x: coordinate x
     :param y: coordinate y
-    :param a: lenght
+    :param a: length
     :param b: width
     :param fill: color of rectangle
     :param border: breadth of limit
@@ -52,7 +52,7 @@ def triangle(x, y, a, b, ang1, ang2, fill):
     :return: None
     """
     turtle.pu()
-    turtle.goto(x,y)
+    turtle.goto(x, y)
     turtle.color(fill)
     turtle.pensize(1)
     turtle.begin_fill()
@@ -126,6 +126,10 @@ def sector(r, x0, y0, color, fill, border, ang):
 
 
 def part_1():
+    """
+    Function for part 1.
+    :return: None
+    """
     triangle(-300, 300, 150, 150, -90, -90, 'white')
     triangle(-150, 150, 150, 150, 90, -90, 'lightsteelblue')
     triangle(-150, 150, 150, 150, 90, 90, 'darkslateblue')
