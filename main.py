@@ -91,28 +91,7 @@ def ellipse(a, b, color, fill,x0,y0,border):
         turtle.goto(x, y)
     turtle.end_fill()
     pass
-def semicircle(r,x0,y0,color,fill,border):
-    '''
-    Function for drawing semicircle
-    :param r: radius of semicircle
-    :param x0: coordinate x0
-    :param y0: coordinate y0
-    :param color: color of border
-    :param fill: color of filling
-    :param border: breadth of limit
-    :return: None
-    '''
-    turtle.pu()
-    turtle.goto(x0, y0)
-    turtle.pd()
-    turtle.color(color,fill)
-    turtle.pensize(border)
-    turtle.begin_fill()
-    turtle.circle(r,180)
-    turtle.rt(90)
-    turtle.bk(r*2)
-    turtle.end_fill()
-    pass
+
 def sector(r,x0,y0,color,fill,border,ang):
     '''
     Function for drawing semicircle
@@ -139,51 +118,52 @@ def sector(r,x0,y0,color,fill,border,ang):
     turtle.rt(ang-90)
     turtle.end_fill()
     pass
-turtle.speed(10)
-turtle.ht()
-turtle.bgcolor('lavender')
-triangle(-300,300,150,150,-90,-90,'white')
-triangle(-150,150,150,150,90,-90,'lightsteelblue')
-triangle(-150,150,150,150,90,90,'darkslateblue')
-triangle(0,300,150,150,-90,90,'plum')
-triangle(0,300,150,150,-90,-90,'lightsteelblue')
-triangle(150,150,150,150,90,-90,'darkslateblue')
-rectangle(150,150,150,150,'white',0,'')
-sector(150,300,150,'','orangered',0,90)
-triangle(300,0,150,150,90,-90,'darkslateblue')
-triangle(150,150,150,150,-90,-90,'lightsteelblue')
-rectangle(-150,0,150,300,'white',0,'')
-sector(150,150,0,'','darkslateblue',0,90)
-sector(150,0,150,'','darkslateblue',0,180)
-rectangle(-300,0,150,150,'lightsteelblue',0,'')
-sector(150,-300,0,'','orangered',0,0)
 
-triangle(-300,-150,150,150,90,90,'white')
-triangle(-300,-150,150,150,0,270,'plum')
-triangle(0,-150,150,150,180,90,'lightsteelblue')
-triangle(0,-150,150,150,90,270,'white')
-triangle(-150,-300,150,150,180,90,'orangered')
-triangle(-300,-150,150,150,0,90,'darkslateblue')
-triangle(0,-150,150,150,180,270,'white')
-triangle(-150,-300,150,150,0,270,'plum')
-
-rectangle(0,-150,150,150,'gold',0,'')
-sector(150,0,-150,'','plum',0,0)
-rectangle(150,-150,150,150,'orangered',0,'')
-ellipse(75,75,'','white',225,-150,0)
-rectangle(150,-150,150,150,'',0,'orangered')
-rectangle(0,-300,150,75,'lightsteelblue',0,'')
-rectangle(75,-300,150,75,'white',0,'')
-rectangle(150,-300,150,150,'lightsteelblue',0,'')
-sector(150,300,-300,'','plum',0,90)
-rectangle(-300,-300,600,600,'',10, 'black')
-turtle.done()
 
 def main():
     '''
     Main function.
     :return: None
     '''
+    turtle.speed(10)
+    turtle.ht()
+    turtle.bgcolor('lavender')
+    triangle(-300, 300, 150, 150, -90, -90, 'white')
+    triangle(-150, 150, 150, 150, 90, -90, 'lightsteelblue')
+    triangle(-150, 150, 150, 150, 90, 90, 'darkslateblue')
+    triangle(0, 300, 150, 150, -90, 90, 'plum')
+    triangle(0, 300, 150, 150, -90, -90, 'lightsteelblue')
+    triangle(150, 150, 150, 150, 90, -90, 'darkslateblue')
+    rectangle(150, 150, 150, 150, 'white', 0, '')
+    sector(150, 300, 150, '', 'orangered', 0, 90)
+    triangle(300, 0, 150, 150, 90, -90, 'darkslateblue')
+    triangle(150, 150, 150, 150, -90, -90, 'lightsteelblue')
+    rectangle(-150, 0, 150, 300, 'white', 0, '')
+    sector(150, 150, 0, '', 'darkslateblue', 0, 90)
+    sector(150, 0, 150, '', 'darkslateblue', 0, 180)
+    rectangle(-300, 0, 150, 150, 'lightsteelblue', 0, '')
+    sector(150, -300, 0, '', 'orangered', 0, 0)
 
-if __name__ == '__main':
+    triangle(-300, -150, 150, 150, 90, 90, 'white')
+    triangle(-300, -150, 150, 150, 0, 270, 'plum')
+    triangle(0, -150, 150, 150, 180, 90, 'lightsteelblue')
+    triangle(0, -150, 150, 150, 90, 270, 'white')
+    triangle(-150, -300, 150, 150, 180, 90, 'orangered')
+    triangle(-300, -150, 150, 150, 0, 90, 'darkslateblue')
+    triangle(0, -150, 150, 150, 180, 270, 'white')
+    triangle(-150, -300, 150, 150, 0, 270, 'plum')
+
+    rectangle(0, -150, 150, 150, 'gold', 0, '')
+    sector(150, 0, -150, '', 'plum', 0, 0)
+    rectangle(150, -150, 150, 150, 'orangered', 0, '')
+    ellipse(75, 75, '', 'white', 225, -150, 0)
+    rectangle(150, -150, 150, 150, '', 0, 'orangered')
+    rectangle(0, -300, 150, 75, 'lightsteelblue', 0, '')
+    rectangle(75, -300, 150, 75, 'white', 0, '')
+    rectangle(150, -300, 150, 150, 'lightsteelblue', 0, '')
+    sector(150, 300, -300, '', 'plum', 0, 90)
+    rectangle(-300, -300, 600, 600, '', 10, 'black')
+    turtle.done()
+    pass
+if __name__ == '__main__':
     main()
