@@ -72,6 +72,7 @@ triangle(-150,150,150,150,0,-90,'plum')
 triangle(0,300,150,150,180,-90,'lightsteelblue')
 triangle(0,300,150,150,0,90,'darkslateblue')
 rectangle(-300,-300,600,600,'',1, 'black')
+
 turtle.done()
 
 def ellipse(a, b, color, fill,x0,y0,border):
@@ -123,7 +124,7 @@ def semicircle(r,x0,y0,color,fill,border):
     turtle.bk(r*2)
     turtle.end_fill()
     pass
-def sector(r,x0,y0,color,fill,border):
+def sector(r,x0,y0,color,fill,border,ang):
     '''
     Function for drawing semicircle
     :param r: radius of sector
@@ -136,6 +137,7 @@ def sector(r,x0,y0,color,fill,border):
     '''
     turtle.pu()
     turtle.goto(x0, y0)
+    turtle.lt(ang)
     turtle.pd()
     turtle.color(color,fill)
     turtle.pensize(border)
@@ -148,6 +150,7 @@ def sector(r,x0,y0,color,fill,border):
     turtle.end_fill()
     turtle.done()
     pass
+
 def main():
     '''
     Main function.
