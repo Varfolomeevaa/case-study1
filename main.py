@@ -51,6 +51,22 @@ def rectangle(x,y,a,b,color,border,border_color):
     :param border_color: color of the border
     :return: none
     '''
+    turtle.pu()
+    turtle.goto(x, y)
+    turtle.color(border_color, fill)
+    turtle.pensize(border)
+    turtle.begin_fill()
+    turtle.pd()
+    turtle.lt(90)
+    turtle.fd(a)
+    turtle.rt(90)
+    turtle.fd(b)
+    turtle.rt(90)
+    turtle.fd(a)
+    turtle.rt(90)
+    turtle.fd(b)
+    turtle.end_fill()
+    turtle.pu()
     pass
 def ellipse(a, b, color, fill,x0,y0,border):
     '''
