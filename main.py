@@ -6,7 +6,7 @@ Varfolomeeva Victoria
 '''
 import math
 import turtle
-def triangle(x,y,a,b,ang1,ang2,fill,border,border_color):
+def triangle(x,y,a,b,ang1,ang2,fill):
     '''
     Function for drawing triangle.
     :param x: coordinate x
@@ -16,14 +16,13 @@ def triangle(x,y,a,b,ang1,ang2,fill,border,border_color):
     :param ang1: 1st angle of rotation
     :param ang2: 2nd angle of rotation
     :param fill: color of the fill
-    :param border: breadth of limit
-    :param border-color: color of the border
     :return: None
     '''
+    turtle.speed(-1)
     turtle.pu()
     turtle.goto(x,y)
-    turtle.color(border_color, fill)
-    turtle.pensize(border)
+    turtle.color(fill)
+    turtle.pensize(1)
     turtle.begin_fill()
     turtle.pd()
     turtle.lt(ang1)
@@ -34,10 +33,12 @@ def triangle(x,y,a,b,ang1,ang2,fill,border,border_color):
     turtle.end_fill()
     turtle.pu()
     pass
-triangle(-300,300,150,150,-90,-90,'red', 5,'blue')
-triangle(-300,300,150,150,0,90,'red', 5,'blue')
-triangle(-150,150,150,150,180,90,'red', 5,'blue')
-
+triangle(-300,300,150,150,-90,-90,'white')
+triangle(-300,300,150,150,0,90,'lightsteelblue')
+triangle(-150,150,150,150,180,90,'darkslateblue')
+triangle(-150,150,150,150,0,-90,'plum')
+triangle(0,300,150,150,180,-90,'lightsteelblue')
+triangle(0,300,150,150,0,90,'darkslateblue')
 def rectangle(x,y,a,b,color,border,border_color):
     '''
     Function for drawing rectangle.
