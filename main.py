@@ -35,7 +35,8 @@ def triangle(x,y,a,b,ang1,ang2,fill,border,border_color):
     turtle.pu()
     pass
 triangle(-300,300,150,150,-90,-90,'red', 5,'blue')
-triangle(-300,300,150,150,90,-90,'red', 5,'blue')
+triangle(-300,300,150,150,0,90,'red', 5,'blue')
+triangle(-150,150,150,150,180,90,'red', 5,'blue')
 
 def rectangle(x,y,a,b,color,border,border_color):
     '''
@@ -98,6 +99,31 @@ def semicircle(r,x0,y0,color,fill,border):
     turtle.rt(90)
     turtle.bk(r*2)
     turtle.end_fill()
+    pass
+def sector(r,x0,y0,color,fill,border):
+    '''
+    Function for drawing semicircle
+    :param r: radius of sector
+    :param x0: coordinate x0
+    :param y0: coordinate y0
+    :param color: color of border
+    :param fill: color of filling
+    :param border: breadth of limit
+    :return: None
+    '''
+    turtle.pu()
+    turtle.goto(x0, y0)
+    turtle.pd()
+    turtle.color(color,fill)
+    turtle.pensize(border)
+    turtle.begin_fill()
+    turtle.circle(r,90)
+    turtle.rt(90)
+    turtle.bk(r)
+    turtle.rt(90)
+    turtle.fd(r)
+    turtle.end_fill()
+    turtle.done()
     pass
 def main():
     '''
