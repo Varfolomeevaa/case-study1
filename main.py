@@ -39,6 +39,7 @@ def rectangle(x, y, a, b, fill, border, border_color):
     turtle.pu()
     pass
 
+
 def triangle(x, y, a, b, ang1, ang2, fill):
     """
     Function for drawing triangle.
