@@ -119,15 +119,7 @@ def sector(r,x0,y0,color,fill,border,ang):
     turtle.end_fill()
     pass
 
-
-def main():
-    '''
-    Main function.
-    :return: None
-    '''
-    turtle.speed(10)
-    turtle.ht()
-    turtle.bgcolor('lavender')
+def part_1():
     triangle(-300, 300, 150, 150, -90, -90, 'white')
     triangle(-150, 150, 150, 150, 90, -90, 'lightsteelblue')
     triangle(-150, 150, 150, 150, 90, 90, 'darkslateblue')
@@ -143,6 +135,17 @@ def main():
     sector(150, 0, 150, '', 'darkslateblue', 0, 180)
     rectangle(-300, 0, 150, 150, 'lightsteelblue', 0, '')
     sector(150, -300, 0, '', 'orangered', 0, 0)
+    pass
+    ''
+def main():
+    '''
+    Main function.
+    :return: None
+    '''
+    turtle.speed(10)
+    turtle.ht()
+    turtle.bgcolor('lavender')
+    part_1()
 
     triangle(-300, -150, 150, 150, 90, 90, 'white')
     triangle(-300, -150, 150, 150, 0, 270, 'plum')
