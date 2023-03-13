@@ -11,8 +11,8 @@ def rectangle(x,y,a,b,fill,border,border_color):
     Function for drawing rectangle.
     :param x: coordinate x
     :param y: coordinate y
-    :param a: width
-    :param b: length
+    :param a: length
+    :param b: width
     :param fill: color of rectangle
     :param border: breadth of limit
     :param border_color: color of the border
