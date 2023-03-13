@@ -137,16 +137,7 @@ def part_1():
     sector(150, -300, 0, '', 'orangered', 0, 0)
     pass
     ''
-def main():
-    '''
-    Main function.
-    :return: None
-    '''
-    turtle.speed(10)
-    turtle.ht()
-    turtle.bgcolor('lavender')
-    part_1()
-
+def part_2():
     triangle(-300, -150, 150, 150, 90, 90, 'white')
     triangle(-300, -150, 150, 150, 0, 270, 'plum')
     triangle(0, -150, 150, 150, 180, 90, 'lightsteelblue')
@@ -166,6 +157,17 @@ def main():
     rectangle(150, -300, 150, 150, 'lightsteelblue', 0, '')
     sector(150, 300, -300, '', 'plum', 0, 90)
     rectangle(-300, -300, 600, 600, '', 10, 'black')
+    pass
+def main():
+    '''
+    Main function.
+    :return: None
+    '''
+    turtle.speed(10)
+    turtle.ht()
+    turtle.bgcolor('lavender')
+    part_1()
+    part_2()
     turtle.done()
     pass
 if __name__ == '__main__':
