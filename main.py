@@ -6,47 +6,14 @@ Varfolomeeva Victoria
 '''
 import math
 import turtle
-def triangle(x,y,a,b,ang1,ang2,fill):
-    '''
-    Function for drawing triangle.
-    :param x: coordinate x
-    :param y: coordinate y
-    :param a: leg 1
-    :param b: leg 2
-    :param ang1: 1st angle of rotation
-    :param ang2: 2nd angle of rotation
-    :param fill: color of the fill
-    :return: None
-    '''
-    turtle.speed(-1)
-    turtle.pu()
-    turtle.goto(x,y)
-    turtle.color(fill)
-    turtle.pensize(1)
-    turtle.begin_fill()
-    turtle.pd()
-    turtle.lt(ang1)
-    turtle.fd(a)
-    turtle.rt(ang2)
-    turtle.fd(b)
-    turtle.goto(x,y)
-    turtle.end_fill()
-    turtle.pu()
-    pass
-triangle(-300,300,150,150,-90,-90,'white')
-triangle(-300,300,150,150,0,90,'lightsteelblue')
-triangle(-150,150,150,150,180,90,'darkslateblue')
-triangle(-150,150,150,150,0,-90,'plum')
-triangle(0,300,150,150,180,-90,'lightsteelblue')
-triangle(0,300,150,150,0,90,'darkslateblue')
-def rectangle(x,y,a,b,color,border,border_color):
+def rectangle(x,y,a,b,fill,border,border_color):
     '''
     Function for drawing rectangle.
     :param x: coordinate x
     :param y: coordinate y
     :param a: width
     :param b: length
-    :param color: color of rectangle
+    :param fill: color of rectangle
     :param border: breadth of limit
     :param border_color: color of the border
     :return: none
@@ -65,9 +32,48 @@ def rectangle(x,y,a,b,color,border,border_color):
     turtle.fd(a)
     turtle.rt(90)
     turtle.fd(b)
+    turtle.rt(180)
     turtle.end_fill()
     turtle.pu()
     pass
+
+def triangle(x,y,a,b,ang1,ang2,fill):
+    '''
+    Function for drawing triangle.
+    :param x: coordinate x
+    :param y: coordinate y
+    :param a: leg 1
+    :param b: leg 2
+    :param ang1: 1st angle of rotation
+    :param ang2: 2nd angle of rotation
+    :param fill: color of the fill
+    :return: None
+    '''
+    turtle.speed(10)
+    turtle.pu()
+    turtle.goto(x,y)
+    turtle.color(fill)
+    turtle.pensize(1)
+    turtle.begin_fill()
+    turtle.pd()
+    turtle.lt(ang1)
+    turtle.fd(a)
+    turtle.rt(ang2)
+    turtle.fd(b)
+    turtle.lt(180-ang1-ang2)
+    turtle.end_fill()
+    turtle.pu()
+    pass
+
+triangle(-300,300,150,150,-90,-90,'white')
+triangle(-300,300,150,150,0,90,'lightsteelblue')
+triangle(-150,150,150,150,180,90,'darkslateblue')
+triangle(-150,150,150,150,0,-90,'plum')
+triangle(0,300,150,150,180,-90,'lightsteelblue')
+triangle(0,300,150,150,0,90,'darkslateblue')
+rectangle(-300,-300,600,600,'',1, 'black')
+turtle.done()
+
 def ellipse(a, b, color, fill,x0,y0,border):
     '''
     Function for drawing ellipse
