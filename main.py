@@ -49,7 +49,7 @@ def triangle(x,y,a,b,ang1,ang2,fill):
     :param fill: color of the fill
     :return: None
     '''
-    turtle.speed(5)
+    turtle.speed(10)
     turtle.pu()
     turtle.goto(x,y)
     turtle.color(fill)
@@ -155,6 +155,25 @@ sector(150,150,0,'','darkslateblue',0,90)
 sector(150,0,150,'','darkslateblue',0,180)
 rectangle(-300,0,150,150,'lightsteelblue',0,'')
 sector(150,-300,0,'','orangered',0,0)
+
+triangle(-300,-150,150,150,90,90,'white')
+triangle(-300,-150,150,150,0,270,'plum')
+triangle(0,-150,150,150,180,90,'lightsteelblue')
+triangle(0,-150,150,150,90,270,'white')
+triangle(-150,-300,150,150,180,90,'orangered')
+triangle(-300,-150,150,150,0,90,'darkslateblue')
+triangle(0,-150,150,150,180,270,'white')
+triangle(-150,-300,150,150,0,270,'plum')
+
+rectangle(0,-150,150,150,'gold',0,'')
+sector(150,0,-150,'','plum',0,0)
+rectangle(150,-150,150,150,'orangered',0,'')
+ellipse(75,75,'','white',225,-150,0)
+rectangle(150,-150,150,150,'',0,'orangered')
+rectangle(0,-300,150,75,'lightsteelblue',0,'')
+rectangle(75,-300,150,75,'white',0,'')
+rectangle(150,-300,150,150,'lightsteelblue',0,'')
+sector(150,300,-300,'','plum',0,90)
 #rectangle(-300,-300,600,600,'',1, 'black')
 turtle.done()
 
