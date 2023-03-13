@@ -1,7 +1,7 @@
 """
 Title 
 Group:
-Sineokaya Anastasia
+Sineokaya Anastasia 60
 Varfolomeeva Victoria 70
 """
 import math
