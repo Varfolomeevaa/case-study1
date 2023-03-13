@@ -2,7 +2,7 @@
 Title 
 Group:
 Sineokaya Anastasia
-Varfolomeeva Victoria
+Varfolomeeva Victoria 70
 """
 import math
 import turtle
