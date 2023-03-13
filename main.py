@@ -154,6 +154,7 @@ triangle(150,150,150,150,-90,-90,'lightsteelblue')
 sector(150,150,0,'','darkslateblue',0,90)
 sector(150,0,150,'','darkslateblue',0,180)
 rectangle(-300,0,150,150,'lightsteelblue',0,'')
+sector(150,-300,0,'','orangered',0,0)
 #rectangle(-300,-300,600,600,'',1, 'black')
 turtle.done()
 
