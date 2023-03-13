@@ -147,8 +147,8 @@ def sector(r,x0,y0,color,fill,border,ang):
     turtle.bk(r)
     turtle.rt(90)
     turtle.fd(r)
+    turtle.rt(ang-90)
     turtle.end_fill()
-    turtle.done()
     pass
 
 def main():
